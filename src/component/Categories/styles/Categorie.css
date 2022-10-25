@@ -1,0 +1,28 @@
+/*General*/
+
+.container-item {
+    margin:0 10%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+   
+}
+.container-item2 {
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1000px){
+
+    .container-item { 
+        justify-content:center;      
+    }
+   
+}
+

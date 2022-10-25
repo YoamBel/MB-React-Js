@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+/*Footer General */
+
+
+
+.ct-footer {
+    width: 100%;
+    bottom: 0px;
+    color: white;
+    background: black;
+}
+
+
+/*footer bot*/
+.ct-footer-bot{
+    width: 100%;
+    height: auto; 
+}   
+
+.ct-footer-bot .foo-bot {
+    background: white;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: nowrap; 
+    padding:1px;
+}
+
+.ct-footer-bot .foo-bot .foo-bot-txt {
+    font-size: 13px;
+    opacity: 0.8;
+    font-family: 'Domine';
+    color: black;
+    width: 25%;
+}
+.ct-footer-bot .foo-bot .foo-bot-txt .foo-bot-ic {
+    font-size: 13px;
+    opacity: 0.8;
+    margin-right:3px;
+    color: black;
+}
+.ct-footer-bot .foo-bot .sp-foo-bot {
+    margin-left: 25px;
+    width: 12%;
+    border-left: 1px solid black;;
+    text-align: center;
+    width: 25%;
+}
+
+.ct-footer-bot .foo-bot .sp-foo-bot .link-txt {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.ct-footer-bot .foo-bot .sp-foo-bot a{
+    color: black;
+    opacity: 0.8;
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Domine';
+}
+
+.ct-footer-bot .foo-bot .sp-foo-bot a:hover {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+/*footer top*/
+.ct-footer-top {
+    display: flex;
+    margin: 0 10%;
+
+}
+.ct-footer-top .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box h2{
+    font-size: 1.05rem;
+    font-family: 'Domine';
+    font-weight: 100;
+    margin-top: 3px;
+}
+
+.box .content {
+    margin:20px 0 0 0;
+    position: relative;
+}
+
+.box .content::before {
+    position: absolute;
+    content: "";
+    top:-10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+}
+
+.box .content::after {
+    position: absolute;
+    content: "";
+    top:-10px;
+    height: 2px;
+    width: 100%;
+    background: #3498db;
+    top:-10px;
+}
+
+
+
+/*Left top*/
+.center .content .inf {
+    width: 100%;
+    height: 100%;
+    margin: 15px 0px;
+}
+ 
+ 
+ .center .content span {
+     opacity: 0.8;
+ }
+ 
+ 
+ .center .content .text {
+     font-size:14px;
+     font-weight: 100;
+     padding-left: 10px;
+     font-family: 'Domine';
+ }
+ 
+ .center .content .phone {
+     margin: 10px 0;
+ }
+ 
+ .center .content .carte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+ } 
+
+/*centre top*/
+
+
+.ct-footer-top .left .content .inf-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.ct-footer-top .left .content .inf-left p,
+.ct-footer-top .left .content .inf-left a {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.ct-footer-top .left .content .inf-left .txt {
+    display: flex;
+    flex-direction: row;
+    opacity: 0.8;
+    font-family: 'Domine';
+    font-size: 15px;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+.ct-footer-top .left .content .inf-left .txt .span-ic .ic{
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    font-size: 11px;
+}
+
+.ct-footer-top .left .content .inf-left a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+    transition: 0.3s;
+    font-family: 'Domine';
+    margin-left: 23px;
+}
+
+.ct-footer-top .left .content .inf-left a:hover {
+    color:#3498db;
+    opacity: 1;
+}
+
+
+/*right top*/
+
+.ct-footer-top .right .content .inf-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.ct-footer-top .right .content .inf-right a {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.ct-footer-top .right .content .inf-right a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+    transition: 0.3s;
+    font-family: 'Domine';
+}
+
+.ct-footer-top .right .content .inf-right a:hover {
+    color:#3498db;
+    opacity: 1;
+}
+
+
+
+/*Media*/
+
+@media only screen and (max-width: 992px){
+
+    /*footer top*/
+    .ct-footer .ct-footer-top {
+        flex-direction: column-reverse;
+        margin: 0 10%;
+    }
+
+    .ct-footer .ct-footer-top .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }  
+}
+

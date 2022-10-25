@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+/*font-family: 'Fleur De Leah', cursive;*/
+
+
+.form-container{
+    background:#F3F3F3 ;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.form-container .collection-ct {
+    height: 800px;
+    width: 800px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+
+.form-container .collection-ct .box-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container .collection-ct .box-col .ct-home-collection{
+    margin:5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container .collection-ct .box-col .ct-home-collection .col-dia{
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    height: 100%;
+    justify-content: space-around;
+    background: #ffffff;
+    
+}
+
+.form-container .collection-ct .box-col .col-dia  div {
+    display: flex;
+    justify-content: center;
+}
+
+.form-container .collection-ct .box-col .col-dia h3 {
+    font-family: 'Fleur De Leah', cursive;
+    font-size: 35px;
+    font-weight: 100;
+    font-style: italic;
+
+}
+
+.form-container .collection-ct .box-col .col-home-dia  div img,
+.form-container .collection-ct .box-col .col-home-or18  div img {
+   max-width: 100%;
+   height: 280px;
+}
+
+.form-container .collection-ct .box-col .col-home-acier  div img,
+.form-container .collection-ct .box-col .col-home-argent25  div img {
+   max-width: 100%;
+   height: 150px;
+}
+
+.form-container .collection-ct .box-col .col-dia a {
+    text-decoration: none;
+    height: 50px;
+    width: 50%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Domine';
+    color: black;
+    transition: 0.3s;
+}
+
+.form-container .collection-ct .box-col .col-dia a:hover{
+    background:#e2b846;
+    color: #ffffff;
+    border: none;
+}
+
+.form-container .collection-ct .diamant{
+   height: 420px;
+   width: 470px;
+}
+
+.form-container .collection-ct .argent25{
+    height: 300px;
+    width: 470px;
+   
+}
+
+.form-container .collection-ct .or18{
+    height: 420px;
+    width: 470px;
+       
+}
+
+.form-container .collection-ct .acier{
+    height: 300px;
+    width: 470px;
+}
+
+/*.form-container .collection-ct .or9{}*/
+
+
+/*slide*/
+
+.container-slidcard{
+    margin:0 10%;
+    height: 400px;
+}
+
