@@ -1,0 +1,11 @@
+{
+ "version":"2.0.0",
+ "tasks":[{
+  "label":"Maud Bijoux : lancer le site et l’API",
+  "type":"process","command":"${env:ComSpec}",
+  "args":["/d","/c","${workspaceFolder}\\LANCER-MAUD-BIJOUX.cmd"],
+  "options":{"cwd":"${workspaceFolder}"},
+  "isBackground":true,"problemMatcher":[],
+  "presentation":{"reveal":"always","panel":"dedicated"},"runOptions":{"instanceLimit":1}
+ }]
+}

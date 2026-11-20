@@ -1,0 +1,31 @@
+.local-notice {position:fixed;bottom:0;left:0;right:0;z-index:10000;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px 20px;background:#242424;color:white;padding:10px 18px;font:13px/1.5 Arial,sans-serif;box-shadow:0 -2px 8px #0003}
+.local-notice strong {color:#e4c99b;letter-spacing:.07em;font-size:12px}
+body {padding-bottom:70px}
+.local-unavailable {margin:160px auto 60px;max-width:760px;padding:30px;border:1px solid #d2c7b4;background:#faf8f4;color:#333;text-align:center;line-height:1.7}
+.local-unavailable a {color:#5f4931;text-decoration:underline}
+.form-container .collection-ct {height:auto;width:min(100% - 32px,960px);display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.form-container .collection-ct .box-col {min-width:0}
+.form-container .collection-ct .box-col .ct-home-collection {width:auto;margin:5px 0}
+.form-container .collection-ct .box-col .col-dia img {object-fit:contain}
+.container-pagination nav .pagination {flex-wrap:wrap;gap:3px}
+.card-image,.card-image2,.card-dt-image,.card-dt-image2 {object-fit:contain}
+button:disabled {opacity:.55;cursor:not-allowed}
+button:focus-visible,a:focus-visible,input:focus-visible {outline:3px solid #a58245;outline-offset:3px}
+.det-card,.det-card2 {max-width:calc(100vw - 24px);max-height:80vh;overflow:auto;z-index:1000}
+@media(max-width:768px){
+ .form-container .collection-ct {grid-template-columns:1fr;max-width:480px}
+ .form-container .collection-ct .box-col .ct-home-collection {height:auto;min-height:300px}
+ .form-container .collection-ct .box-col .col-dia {gap:16px;padding:22px;align-items:center}
+ .form-container .collection-ct .box-col .col-dia h3 {font-size:28px;text-align:center}
+ .form-container .collection-ct .box-col .col-dia img {height:auto!important;max-height:220px;max-width:100%}
+ .form-container .collection-ct .box-col .col-dia a {width:min(100%,240px);min-height:48px;text-align:center}
+ .research-container .ct-item-search .ct-inp-search {flex-direction:column;gap:16px}
+ .research-container .ct-item-search .ct-inp-search .ct-input-filter {width:100%;padding:0}
+ .research-container .ct-item-search .ct-inp-search .ct-input-filter label {flex-wrap:wrap;gap:8px}
+ .research-container .ct-item-search .ct-inp-search .ct-input-filter input {width:100%;min-height:44px}
+ .det-card,.det-card2 {width:calc(100vw - 24px)!important;left:12px!important;right:auto!important;margin:0!important}
+ .bx-card-dt,.bx-card-dt2 {display:flex;flex-direction:column}
+ .bx-card-dt-img,.bx-card-dt-img2,.bx-card-dt-info,.bx-card-dt-info2 {width:100%!important}
+ .local-notice {font-size:11px;padding:8px 12px}
+}
+.local-notice a{color:#e4c99b;text-decoration:underline}.maud-showcase{box-sizing:border-box;max-width:1160px;margin:24px auto 36px;padding:38px 32px;display:grid;grid-template-columns:1.4fr 1fr;gap:40px;background:#f7f4ee;border:1px solid #e6ded1;color:#302b25;font-family:Arial,sans-serif}.maud-showcase h1{font:normal clamp(27px,3vw,42px)/1.2 Georgia,serif;margin:16px 0}.maud-showcase p{line-height:1.7;font-size:15px}.maud-showcase small{display:block;font-size:12px;line-height:1.7;color:#716658;margin-top:18px}.maud-demo-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:24px 0 12px}.maud-demo-actions a,.maud-demo-actions button,.maud-quick-demo button{padding:12px 18px;border:1px solid #6f5839;border-radius:3px;font:14px Arial,sans-serif;cursor:pointer;text-decoration:none}.maud-catalogue-link{background:#faf8f4;color:#4c3a24}.maud-demo-actions .quote-primary{color:white;background:#302b25}.maud-showcase ol{list-style:none;margin:0;padding:0;align-self:center}.maud-showcase li{display:flex;gap:18px;padding:16px 0;border-bottom:1px solid #ddd3c3}.maud-showcase li:last-child{border:0}.maud-showcase li>span{font:26px Georgia,serif;color:#9b7a4a}.maud-showcase li p{margin:6px 0 0;font-size:13px}.maud-showcase li strong{font-size:16px}.maud-quick-demo{padding:20px;background:#f7f4ee;border:1px solid #e6ded1;margin:20px 0}.maud-quick-demo h2{margin-top:0}@media(max-width:768px){.maud-showcase{margin:20px 16px;padding:24px 18px;grid-template-columns:1fr;gap:16px}.maud-demo-actions{align-items:stretch;flex-direction:column}.maud-demo-actions a,.maud-demo-actions button{text-align:center}.maud-showcase ol{width:100%}}

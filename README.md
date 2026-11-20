@@ -1,3 +1,58 @@
+# Maud Bijoux — interactive portfolio demo
+
+A jewellery catalogue and quote-request application by **Yoam Belhassen**, restored and modernized as a portfolio project. This is a local demonstration, with no real purchases or outgoing emails.
+
+## Try the demo
+
+The homepage includes **Essayer la démo sans inscription**: start a private visitor session, explore the catalogue, add items to the basket and save a printable quote without providing personal credentials.
+
+## Features
+
+- 561 historical catalogue items, category filters and catalogue-wide search.
+- Basket quantities and notes, private quote history, print / PDF.
+- Client accounts and an optional administration area for catalogue editing, photo uploads, account management and quote status updates.
+- Manual quote pricing with VAT calculations and conflict detection.
+- Local email previews and configurable draft business settings.
+- Desktop and mobile layouts that preserve the original pages and visual style.
+
+Missing historical photos use a neutral placeholder. Commercial pricing rules and an email provider are not required to explore the demo.
+
+## Run locally on Windows
+
+Keep both repositories side by side:
+
+```text
+Projets-GitHub-Yoam/
+  MB-React-Js/
+  Project-MB-ReactJs/
+```
+
+The local runtime requires Node.js, the .NET 10 SDK/runtime and SQL Server LocalDB. The restored historical catalogue must be available as **MaudBijouxArchiveLocal**; restoring and checking the supplied historical backup is a separate prerequisite, not an automatic part of the launcher. Do not execute the original destructive SQL scripts against an existing database.
+
+From **MB-React-Js**, run **LANCER-MAUD-BIJOUX.cmd**, or open the folder in VS Code and choose **Terminal → Run Task → Maud Bijoux : lancer le site et l’API**. The site opens at `http://127.0.0.1:8771`. The launcher builds both projects; keep its terminal open.
+
+The application creates a separate **MaudBijouxDemoLocal** working database. The original archive remains read-only. First-time administrative setup is optional for visitors.
+
+## Repository layout
+
+| Repository | Modernized application | Preserved historical source |
+| --- | --- | --- |
+| [MB-React-Js](https://github.com/YoamBel/MB-React-Js) | React 17 + Vite in `Relance-MaudBijoux/web` | Original React source at the repository root |
+| [Project-MB-ReactJs](https://github.com/YoamBel/Project-MB-ReactJs) | ASP.NET Core / .NET 10 API in `Relance-API` | Original ASP.NET Framework project and historical assets |
+
+Historical files are retained for reference. New account data, working SQL databases, backups, uploaded photos, session keys, dependencies and build outputs are not included in the modernization commit.
+
+## Validation
+
+React and .NET builds; 116 catalogue routes; desktop/mobile navigation; visitor sessions and isolated quote histories; basket-to-quote workflow and persistence; printing; account roles and session revocation; manual pricing and rounding; catalogue editing and image uploads; local email previews.
+
+Basket checks can be run with `npm run test:cart` inside `Relance-MaudBijoux/web`.
+
+See **[README-RELANCE.md](README-RELANCE.md)** for detailed French instructions and local data storage information. This repository update does not deploy an online site.
+
+<details>
+<summary>Original project documentation</summary>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +123,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+</details>
